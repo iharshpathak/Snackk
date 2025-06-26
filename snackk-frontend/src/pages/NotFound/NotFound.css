@@ -1,0 +1,80 @@
+.not-found h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+    margin-top: 2rem;
+}
+.not-found img{
+    width: 100%;
+    height: 25rem;
+    object-fit: contain;
+}
+.contents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contents h2{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+.btn{
+  display: block;
+  margin-top: 50px;
+  padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+}
+.btn:hover{
+  background-color: var(--red);
+  color: var(--white);
+  transition: 0.3s ease-in-out;
+  box-shadow: 2px 3px 13px 0px rgba(124,124,124,0.49);
+  -webkit-box-shadow: 2px 3px 13px 0px rgba(124,124,124,0.49);
+  -moz-box-shadow: 2px 3px 13px 0px rgba(124,124,124,0.49);
+  cursor: pointer
+}
+
+@media only screen and (max-width: 408px) {
+  .not-found h1{
+    font-size: 30px;
+  }
+  .not-found img{
+    width: 90%;
+    height: 25rem;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+  }
+  .contents h2{
+    font-size: 22px;
+  }
+  .btn{
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .not-found h1{
+    font-size: 28px;
+  }
+  .not-found img{
+    width: 80%;
+    height: 25rem;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+  }
+  .contents h2{
+    font-size: 20px;
+  }
+  .btn{
+    font-size: 12px;
+    padding: 15px;
+  }
+}

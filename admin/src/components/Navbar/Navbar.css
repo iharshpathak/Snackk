@@ -1,0 +1,94 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 4%;
+}
+.navbar .logo{
+  width: max(10%, 80px);
+}
+.navbar .profile{
+  width: 40px;
+}
+.btn{
+  background: transparent;
+  font-size: 16px;
+  color: var(--grey);
+  border: 1px solid var(--light-grey);
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.btn:hover{
+  background-color: var(--red);
+  color: var(--white);
+}
+.logout-profile{
+  position: relative;
+}
+.logout-profile li{
+  color: var(--grey);
+}
+.logout-profile:hover .logout-profile-dropdown{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--white);
+  padding: 12px 25px;
+  border-radius: 8px;
+  list-style: none;
+  box-shadow: 2px 3px 13px 0px rgba(124,124,124,0.49);
+  -webkit-box-shadow: 2px 3px 13px 0px rgba(124,124,124,0.49);
+  -moz-box-shadow: 2px 3px 13px 0px rgba(124,124,124,0.49);
+}
+.logout-profile-dropdown{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-60%);
+  display: none;
+  z-index: 1;
+}
+.logout-profile-dropdown img{
+  width: 20px;
+}
+.logout-profile img{
+  cursor: pointer;
+}
+.logout-profile-dropdown li{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.logout-profile-dropdown li:hover{
+  color: var(--red);
+}
+.logout-profile-dropdown li:hover img{
+  filter: invert(25%) sepia(96%) saturate(4979%) hue-rotate(348deg) brightness(93%) contrast(105%);
+}
+@media (max-width:1050px) {
+  .btn{
+    padding: 8px 25px;
+  }
+}
+@media (max-width:900px) {
+  .btn{
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+@media (max-width:750px) {
+
+  .btn{
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+
+}
+@media only screen and (max-width: 380px) {
+  .btn {
+    font-size: 10px;
+  }
+}
