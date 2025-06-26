@@ -21,6 +21,18 @@
   font-size: max(1.5vw, 14px);
   color: var(--grey);
 }
+.list-table {
+  max-height: 70vh; 
+  overflow-y: auto;
+}
+.list-table::-webkit-scrollbar {
+  width: 6px;
+}
+.list-table::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
 @media (max-width:600px){
   .list-table-format{
     grid-template-columns: 1fr 3fr 1fr;
