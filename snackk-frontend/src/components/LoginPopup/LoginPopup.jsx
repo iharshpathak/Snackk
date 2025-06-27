@@ -39,6 +39,9 @@ const LoginPopup = ({ setShowLogin }) => {
       setShowLogin(false);
       if(RegSuccess){
         toast.success("Account Created Successfully, Login Now !");
+        RegSuccess = false;
+      }else{
+        toast.success("Logged In!");
       }
     } else {
       toast.warn(response.data.message);
