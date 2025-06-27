@@ -25,16 +25,21 @@ const LoginPopup = ({ setShowLogin }) => {
   async function onLogin(event) {
     event.preventDefault();
     let newUrl = url;
+    let RegSuccess = false;
     if (currState === "Login") {
       newUrl += "/api/user/login";
     } else {
       newUrl += "/api/user/register";
+      RegSuccess = true;
     }
     const response = await axios.post(newUrl, data);
     if (response.data.success) {
       setToken(response.data.token);
       localStorage.setItem("Token", response.data.token);
       setShowLogin(false);
+      if(RegSuccess){
+        toast.success("Account Created Successfully, Login Now !");
+      }
     } else {
       toast.warn(response.data.message);
     }
