@@ -38,7 +38,7 @@ const LoginPopup = ({ setShowLogin }) => {
       localStorage.setItem("Token", response.data.token);
       setShowLogin(false);
       if(RegSuccess){
-        toast.success("Account Created Successfully, Login Now !");
+        toast.success("Account Created Successfully,& Logged In !");
         RegSuccess = false;
       }else{
         toast.success("Logged In!");
