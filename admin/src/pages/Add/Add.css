@@ -4,7 +4,9 @@
   margin-top: 50px;
   color: var(--black);
   font-size: 16px;
-  overflow: auto;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .add form{
   gap: 20px;
