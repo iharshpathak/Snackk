@@ -12,6 +12,7 @@
 }
 .order-list {
   overflow: auto;
+  padding-bottom: 20px;
 }
 .order-item:hover{
   color: var(--black);
