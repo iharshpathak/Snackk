@@ -12,7 +12,7 @@
 }
 .order-list {
   overflow: auto;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 }
 .order-item:hover{
   color: var(--black);
